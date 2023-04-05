@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install dependencies npm install
-      run: npm install
+      run: npm install --prefix package.json --version 7.15.0
     - name: Linter (ESLint) npm run lint
       run: npm run lint
     - name: Formatter (Prettier)
